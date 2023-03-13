@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="profile">
+    <div class="container">
+      <div class="profile-img-div flex">
+        <div class="profile-img">
+          <button class="btn profile-img-edit"></button>
+        </div>
+      </div>
+      <div class="profile-input-div">
+        <span class="profile-input-geo"></span>
+        <input style="outline:none;" class="profile-input" type="text" placeholder="Christopher Harington">
+        <input style="outline:none;" class="profile-input profile-geo-padding" type="text" placeholder="New York">
+      </div>
+      <h3 class="profile-descr">Description</h3>
+      <textarea maxlength="200" style="outline:none;" class="profile-input profile-textarea" type="text"
+        placeholder="Profile description, profile description, profile description"></textarea>
+      <span class="profile-textarea-numb">61/200</span>
+      <p class="profile-change-text">Looking for</p>
+      <div class="one-select-div mb40">
+        <select style="outline:none;" class="one-select" for="select">
+          <option class="one-option" value="1">Doesn’t matter</option>
+        </select>
+        <span class="one-select-arrow" src="./img/select-arrow.svg" alt=""></span>
+      </div>
+      <span class="profile-save-span">Settings have been saved</span>
+      <button class="btn profile-save">Save settings</button>
+      <a href="#" class="profile-text-bottom">Log Out</a>
+      <a href="#" class="profile-text-bottom profile-last-elem">Change Facebook profile</a>
+      <div class="tapbar-main">
+        <ul class="tapbar flex">
+          <span class="tapbar-change tapbar-change-right"></span>
+          <a href="./search.html" class="tapbar-item tapbar-item-search"></a>
+          <a href="./chats.html" class="tapbar-item tapbar-item-chats"></a>
+          <a href="./profile.html" class="tapbar-item tapbar-item-profile"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+  document.body.style.backgroundColor = '#FFFFFF';
+  document.querySelector('.profile-save').addEventListener('click', () => {
+    document.querySelector('.profile-save-span').style.display = 'block';
+  });
+
+</script>
+
+</html>

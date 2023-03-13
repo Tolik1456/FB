@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="notification">
+    <div class="container">
+      <div class="one-header notification-header flex">
+        <a href="./chats.html">
+          <img class="dialog-back" src="./img/back.svg" alt="Back">
+        </a>
+        <h2 class="notification-h2">Notifications</h2>
+        <div class="unread-notification-icon"></div>
+      </div>
+      <span class="notification-span">Mark all as read</span>
+      <ul class="notification-ul flex">
+        <li class="notification-li unread flex">
+          <h3 class="notification-li-h3">What's new</h3>
+          <span class="notification-li-span">This is a notification about new options here</span>
+        </li>
+        <li class="notification-li unread flex">
+          <span class="notification-li-span"><b>Elizabeth</b> Matches with you!</span>
+        </li>
+        <li class="notification-li flex">
+          <span class="notification-li-span">This page contains a set of example notifications that you can interact
+            with to see what is possible with the...</span>
+        </li>
+        <li class="notification-li flex">
+          <span class="notification-li-span">This is used for local testing only and you'll never receive a push
+            notification from us.</span>
+        </li>
+      </ul>
+      <div class="tapbar-main">
+        <ul class="tapbar flex">
+          <a href="./search.html" class="tapbar-item tapbar-item-search"></a>
+          <a href="./chats.html" class="tapbar-item tapbar-item-chats"></a>
+          <a href="./profile.html" class="tapbar-item tapbar-item-profile"></a>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+
+  document.body.style.backgroundColor = '#FFFFFF';
+
+  document.querySelectorAll('.unread').forEach(f => {
+    f.addEventListener('click', () => {
+      event.currentTarget.classList.remove('unread');
+      if (document.getElementsByClassName('unread').length) {
+        return
+      }
+      else {
+        document.querySelector('.unread-notification-icon').classList.add('read');
+      }
+    });
+  });
+</script>
+
+</html>

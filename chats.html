@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="chats">
+    <div class="container">
+      <div class="one-header flex">
+        <span></span>
+        <h2 class="chats-h2">My chats</h2>
+        <a href="./notification.html">
+          <div class="unread-notification-icon"></div>
+          </a>
+      </div>
+      <div class="chats-checkbox">
+        <label class="chats-switch">
+          <input class="chats-input" type="checkbox">
+          <span class="chats-slider">
+            <span class="chats-img"></span>
+          </span>
+        </label>
+      </div>
+      <span class="chats-span">With a match</span>
+      <ul class="chats-ul flex">
+        <li class="chats-li flex">
+          <div class="chats-li-left flex">
+            <img class="chats-li-img" src="./img/chats-img1.png" alt="">
+            <span class="chats-li-status"></span>
+            <div class="chats-li-left-info flex">
+            <h3 class="chats-li-h3">Alice</h3>
+            <span class="chats-li-text">Hello, this is the first message</span>
+          </div>
+          </div>
+          <div class="chats-li-right flex">
+            <span class="chats-li-time">11:52</span>
+            <span class="chats-li-unread flex">
+              <span class="chats-li-unread-numb">1</span>
+            </span>
+          </div>
+        </li>
+        <li class="chats-li flex">
+          <div class="chats-li-left flex">
+            <img class="chats-li-img" src="./img/chats-img2.png" alt="">
+            <div class="chats-li-left-info flex">
+            <h3 class="chats-li-h3">Marina</h3>
+            <span class="chats-li-text">Hello, this is the first message</span>
+          </div>
+          </div>
+          <div class="chats-li-right flex">
+            <span class="chats-li-time">11:52</span>
+            <span class="chats-li-unread flex">
+              <span class="chats-li-unread-numb">3</span>
+            </span>
+          </div>
+        </li>
+        <li class="chats-li flex">
+          <div class="chats-li-left flex">
+            <img class="chats-li-img" src="./img/chats-img3.png" alt="">
+            <span class="chats-li-status"></span>
+            <div class="chats-li-left-info flex">
+            <h3 class="chats-li-h3">Amanda</h3>
+            <h3 class="chats-li-text typing">Typing...</h3>
+          </div>
+          </div>
+          <div class="chats-li-right flex">
+            <span class="chats-li-time">11:52</span>
+          </div>
+        </li>
+        <li class="chats-li flex">
+          <div class="chats-li-left flex">
+            <img class="chats-li-img" src="./img/chats-img4.png" alt="">
+            <span class="chats-li-status"></span>
+            <div class="chats-li-left-info flex">
+            <h3 class="chats-li-h3">Abigayle</h3>
+            <span class="chats-li-text">Hello, this is the first message</span>
+          </div>
+          </div>
+          <div class="chats-li-right flex">
+            <span class="chats-li-time">Yesterday</span>
+            <span class="chats-li-unread flex">
+              <span class="chats-li-unread-numb">12</span>
+            </span>
+          </div>
+        </li>
+        <li class="chats-li flex">
+          <div class="chats-li-left flex">
+            <img class="chats-li-img" src="./img/chats-img5.png" alt="">
+            <div class="chats-li-left-info flex">
+            <h3 class="chats-li-h3">Grace</h3>
+            <span class="chats-li-text">Hello, this is the first message</span>
+          </div>
+          </div>
+          <div class="chats-li-right flex">
+            <span class="chats-li-time">11:52</span>
+            <span class="chats-li-read flex">
+            </span>
+          </div>
+        </li>
+        <li class="chats-li flex">
+          <div class="chats-li-left flex">
+            <img class="chats-li-img" src="./img/chats-img6.png" alt="">
+            <div class="chats-li-left-info flex">
+            <h3 class="chats-li-h3">Sharon</h3>
+            <span class="chats-li-text">Hello, this is the first message</span>
+          </div>
+          </div>
+          <div class="chats-li-right flex">
+            <span class="chats-li-time">11:52</span>
+            <span class="chats-li-read flex">
+            </span>
+          </div>
+        </li>
+      </ul>
+      <div class="tapbar-main">
+      <ul class="tapbar flex">
+        <span class="tapbar-change tapbar-change-center"></span>
+        <a href="./search.html" class="tapbar-item tapbar-item-search"></a>
+        <a href="./chats.html" class="tapbar-item tapbar-item-chats"></a>
+        <a href="./profile.html" class="tapbar-item tapbar-item-profile"></a>
+      </ul>
+    </div>
+    </div>
+  </section>
+</body>
+<script>
+  
+document.body.style.backgroundColor='#FFFFFF';
+document.querySelectorAll('.chats-li').forEach(f=>{
+f.addEventListener('click',()=>{
+  window.location.href='./dialog.html';
+});
+});
+
+
+</script>
+</html>

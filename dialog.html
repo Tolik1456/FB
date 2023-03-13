@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="dialog">
+    <div class="container">
+      <div class="one-header dialog-header flex">
+        <a href="./chats.html">
+          <img class="dialog-back" src="./img/back.svg" alt="Back">
+        </a>
+        <div class="dialog-profile flex">
+          <img class="chats-li-img" src="./img/chats-img1.png" alt="Alice">
+          <span class="chats-li-status dialog-status"></span>
+          <div class="chats-li-left-info flex">
+            <div class="flex">
+              <h3 class="chats-li-h3 dialog-h3">Alice</h3>
+              <span class="chats-li-age">25</span>
+            </div>
+            <span class="chats-li-text dialog-text">Online now</span>
+          </div>
+        </div>
+        <a class="dialog-notification" href="./notification.html">
+          <div class="unread-notification-icon"></div>
+        </a>
+      </div>
+      <ul class="dialog-field">
+        <li class="dialog-message dialog-left">
+          Hello
+          <span class="dialog-message-time">11:52</span>
+        </li>
+        <li class="dialog-message dialog-left mb20">
+          Nice to meet you
+          <span class="dialog-message-time">11:52</span>
+        </li>
+        <li class="dialog-message dialog-right">
+          Profile description,
+          <span class="dialog-message-time">11:52</span>
+        </li>
+        <li class="dialog-message dialog-right">
+          This is some kind of<br> message, description or <br>other...
+          <span class="dialog-message-time">11:52</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="dialog-container">
+    <div class="dialog-submit flex">
+      <img class="dialog-file" src="./img/file.svg" alt="file">
+      <input style="outline:none;" class="dialog-input" type="text" placeholder="Type message">
+      <button class=" btn dialog-input-smile"></button>
+      <img class="dialog-submit-img" src="./img/submit.svg" alt="submit">
+    </div>
+  </div>
+  <div class="tapbar-main">
+  <ul class="tapbar flex">
+    <span class="tapbar-change tapbar-change-center"></span>
+    <a href="./search.html" class="tapbar-item tapbar-item-search"></a>
+    <a href="./chats.html" class="tapbar-item tapbar-item-chats"></a>
+    <a href="./profile.html" class="tapbar-item tapbar-item-profile"></a>
+  </ul>
+</div>
+</body>
+<script>
+  document.body.style.backgroundColor='#FFFFFF';
+</script>
+</html>
